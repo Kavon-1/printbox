@@ -32,7 +32,7 @@ spec:
         ports:
           - containerPort: 5000
             name: http-flask-pod
-        livenessProbe:
+        readinessProbe:
           httpGet:
             path: /healtz
             port: 80
